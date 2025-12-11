@@ -7,4 +7,4 @@ top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print "Ut
 
 echo ""
 echo "=== Surveillance RAM ==="
-free -h | awk '/^Mem:/ {print "Mémoire utilisée: " $3 " / " $2 " (" int($3/$2 * 100) "%)"}'
+free -m | awk '/^Mem:/ {printf "Mémoire utilisée: %.1fGi / %.1fGi (%.0f%%)\n", $3/1024, $2/1024, ($3/$2)*100}'
