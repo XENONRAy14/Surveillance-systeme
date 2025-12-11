@@ -11,3 +11,7 @@ Script de surveillance des ressources système.
 ### Surveillance RAM
 - Affiche l'utilisation actuelle de la mémoire
 - Utilise la commande `free` pour récupérer les statistiques de mémoire
+
+### Surveillance Disque
+- Affiche l'utilisation de l'espace disque
+- Utilise la commande `df` pour récupérer les statistiques du disque racine
